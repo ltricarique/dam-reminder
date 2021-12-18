@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AltaRecordatorioActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/notaTextFieldId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@android:color/transparent"
+        android:background="@android:color/transparent"
+        android:hint="Nota">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/notaEditTextId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/fechaLinearLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fechaTextViewId"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:text="Fecha recordatorio" />
+
+        <TextView
+            android:id="@+id/fechaSeleccionadaTextViewId"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:minHeight="30dp"
+            android:text="" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#9E9E9E"/>
+
+    <LinearLayout
+        android:id="@+id/horaLinearLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/horaTextViewId"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:text="Hora recordatorio" />
+
+        <TextView
+            android:id="@+id/horaSeleccionadaTextViewId"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:minHeight="30dp"
+            android:text="" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/guardarButtonId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar" />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ar.edu.utn.frsf.isi.dam.reminder">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Damreminder">
+        <activity
+            android:name=".activity.AltaRecordatorioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ListaRecordatorioActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".service.RecordatorioReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="ar.edu.utn.frsf.isi.dam.reminder.RECORDATORIO" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
