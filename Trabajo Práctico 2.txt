@@ -1,0 +1,6 @@
+Integrantes:
+   - MONTALVO, Santiago
+   - TRICARIQUE, Leandro
+
+Repositorio GitHub:
+   - https://github.com/ltricarique/dam-reminder
